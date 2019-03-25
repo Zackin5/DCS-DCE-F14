@@ -1,0 +1,1 @@
+start cmd /k ..\..\..\..\..\..\bin\luae.exe Scripts/Debrief_Master.lua

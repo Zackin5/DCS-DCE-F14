@@ -1,0 +1,1 @@
+start "Skip Mission" cmd /k "..\..\..\..\..\..\bin\luae.exe Scripts/BAT_SkipMission.lua & exit"

@@ -1,0 +1,1 @@
+start "Generate First Mission" cmd /k "..\..\..\..\..\..\bin\luae.exe Scripts/BAT_FirstMission.lua & exit"

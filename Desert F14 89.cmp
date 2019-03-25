@@ -1,0 +1,56 @@
+campaign = 
+{
+    ["picture_EN"] = "Desert_F14_89.jpg",
+    ["directory"] = "E:\\Program Files\\Eagle Dynamics\\DCS World\\Mods\\aircraft\\F14\\Missions\\Campaigns\\",
+    ["description"] = "1989 combat exercise to evaluate the F-14A+ in a prolonged dynamic offensive air campaign against simulated Warsaw Pact forces in southern Nevada.",
+    ["picture"] = "Desert_F14_89.jpg",
+    ["description_EN"] = "1989 combat exercise to evaluate the F-14A+ in a prolonged dynamic offensive air campaign against simulated Warsaw Pact forces in southern Nevada.",
+    ["necessaryUnits"] = 
+    {
+        ["F-14B"] = "F-14B",
+    }, -- end of ["necessaryUnits"]
+    ["name"] = "Desert F-14 89",
+    ["version"] = 1,
+    ["startStage"] = 1,
+    ["name_EN"] = "Desert F-14 89",
+    ["fullPath"] = "E:\\Program Files\\Eagle Dynamics\\DCS World\\Mods\\aircraft\\F14\\Missions\\Campaigns\\Desert F14 89.cmp",
+    ["stages"] = 
+    {
+        [1] = 
+        {
+            ["name"] = "Stage 1",
+            ["missions"] = 
+            {
+                [1] = 
+                {
+                    ["interval"] = 
+                    {
+                        [1] = 0,
+                        [2] = 100,
+                    }, -- end of ["interval"]
+                    ["file"] = "Desert F14 89_first.miz",
+                    ["description"] = "",
+                    ["fullpath"] = "E:\\Program Files\\Eagle Dynamics\\DCS World\\Mods\\aircraft\\F14\\Missions\\Campaigns\\Desert F14 89_first.miz",
+                }, -- end of [1]
+            }, -- end of ["missions"]
+        }, -- end of [1]
+        [2] = 
+        {
+            ["name"] = "Stage 2",
+            ["missions"] = 
+            {
+                [1] = 
+                {
+                    ["interval"] = 
+                    {
+                        [1] = 0,
+                        [2] = 100,
+                    }, -- end of ["interval"]
+                    ["file"] = "Desert F14 89_ongoing.miz",
+                    ["description"] = "",
+                    ["fullpath"] = "E:\\Program Files\\Eagle Dynamics\\DCS World\\Mods\\aircraft\\F14\\Missions\\Campaigns\\Desert F14 89_ongoing.miz",
+                }, -- end of [1]
+            }, -- end of ["missions"]
+        }, -- end of [2]
+    }, -- end of ["stages"]
+} -- end of campaign
