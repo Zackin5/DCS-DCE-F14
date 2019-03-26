@@ -17,6 +17,10 @@ function getParkingId(base)
 	if db_airbases[base].parkingIds.parkingN == nil then
 		db_airbases[base].parkingIds.parkingN = db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix].lower
 	end
+
+	if db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix] == nil then
+		return nil
+	end
 		
 	-- generate the id
 	fullId = db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix].prefix .. db_airbases[base].parkingIds.parkingN
@@ -27,7 +31,10 @@ function getParkingId(base)
 	-- roll over to the next parking prefix if needed
 	if db_airbases[base].parkingIds.parkingN > db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix].upper then
 		db_airbases[base].parkingIds.iPrefix = db_airbases[base].parkingIds.iPrefix + 1
-		db_airbases[base].parkingIds.parkingN = db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix].lower
+
+		if db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix] ~= nil then
+			db_airbases[base].parkingIds.parkingN = db_airbases[base].parkingIds[db_airbases[base].parkingIds.iPrefix].lower
+		end
 	end
 	
 	return fullId
