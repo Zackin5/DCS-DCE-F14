@@ -41,19 +41,22 @@ for side_name, side in pairs(targetlist) do														--Iterate through all s
                         ["groupId"] = GenerateID(),
                         ["units"] = 
                         {
-                            ["effectPreset"] = 4,
-                            ["category"] = "Effects",
-                            ["type"] = "big_smoke",
-                            ["y"] = element.y,
-                            ["x"] = element.x,
-                            ["unitId"] = GenerateID(),
-                            ["name"] = "smoke_" .. element.name:gsub("%s+", "_"),
-                            ["effectTransparency"] = 1,
-                            ["heading"] = 0,
+                            [1] = 
+                            {
+                                ["effectPreset"] = 4,
+                                ["category"] = "Effects",
+                                ["type"] = "big_smoke",
+                                ["y"] = element.y,
+                                ["x"] = element.x,
+                                ["unitId"] = GenerateID(),
+                                ["name"] = "Smoke_" .. element.name:gsub("%s+", "_"),
+                                ["effectTransparency"] = 1,
+                                ["heading"] = 0,
+                            }
                         },
                         ["y"] = element.y,
                         ["x"] = element.x,
-                        ["name"] = "smoke_" .. element.name:gsub("%s+", "_"),
+                        ["name"] = "Smoke_" .. element.name:gsub("%s+", "_"),
                         ["linkOffset"] = false,
                         ["dead"] = false,
                         ["hidden"] = true,
