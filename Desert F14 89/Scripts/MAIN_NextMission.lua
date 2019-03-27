@@ -103,6 +103,7 @@ dofile("Scripts/ATO_FlightPlan.lua")
 dofile("Scripts/DC_StaticAircraft.lua")
 dofile("Scripts/DC_Briefing.lua")
 dofile("Scripts/DC_Prune.lua")
+dofile("Scripts/DC_SmokeFx.lua")
 
 dofile("Scripts/DC_EndCampaign.lua")
 
