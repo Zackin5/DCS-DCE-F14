@@ -10,6 +10,7 @@ end
 --advance campaign time
 local idle_time = math.random(camp.idle_time_min, camp.idle_time_max)							--random idle time to next mission in seconds, depending on min-max defined for campaign
 camp.time = camp.time + idle_time																--add idle time to campaign time
+camp.time_since_last_mission = idle_time														--store idle time
 
 while camp.time >= 86400 do																		--repeat as long as time 24 hours or more
 	camp.time = camp.time - 86400																--remove 24 hours from time
